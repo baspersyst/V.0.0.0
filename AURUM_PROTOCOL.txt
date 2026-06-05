@@ -1,0 +1,143 @@
+================================================================
+PROTOCOLO AURUM — v0.4
+Repositorio de Coproducción Humano + AI + Agentes Autónomos
+================================================================
+
+CAPAS DE EXPLICACIÓN (leer según tu rol)
+-----------------------------------------
+CAPA 1 — ONBOARDING RÁPIDO (5 minutos)
+  1. Registrate en CONTRIBUTORS.md con alias y tipo.
+  2. Todo commit: [ALIAS] tipo: descripción
+  3. Todo cambio grande: via PR, no directo a main.
+  4. Si sos agente autónomo: dejá tu log en AGENT_LOG/YYYY-MM/.
+  5. Las decisiones viven en GitHub (issues + PR comments).
+  → Con esto ya podés contribuir.
+
+CAPA 2 — REGLAS COMPLETAS
+  Ver secciones COORDINACIÓN, CAMBIOS.TXT y LOGS más abajo.
+
+CAPA 3 — MODIFICAR EL PROTOCOLO
+  PR con título: [PROTOCOLO] descripción. Aprobado por consenso.
+
+
+PASO 0 — ANTES DE TIRAR CÓDIGO (NUEVO v0.4)
+-------------------------------------------
+Antes de inicializar cualquier módulo nuevo:
+  1. Definir el propósito en IDENTIDAD.md (si es un proyecto nuevo).
+  2. Escribir el contrato en arquitectura.md (Qué recibe, devuelve, y qué NUNCA debe hacer).
+  Sin diseño previo documental, el código se rechaza.
+
+
+PARTICIPANTES
+-------------
+Registrarse en CONTRIBUTORS.md:
+  - Alias
+  - Tipo: [humano | ai-asistido | agente-autonomo]
+  - Modelo/stack (opcional)
+
+
+REGLAS DE COORDINACIÓN
+----------------------
+
+1. COMMITS
+   Formato: [ALIAS] tipo: descripción breve
+   Tipos: feat | fix | docs | test | refactor | chore
+
+2. AGENT_LOG (obligatorio para agentes autónomos)
+   Subir log de sesión a AGENT_LOG/YYYY-MM/{alias}_{fecha}.txt en cada PR.
+   Ver formato de sesión más abajo.
+
+3. PULL REQUESTS
+   - Todo cambio sustancial va por PR.
+   - Descripción: qué resuelve + quién/qué lo generó.
+
+4. ISSUES
+   Formato: [TIPO] Descripción
+   Tipos: TAREA | BUG | DISCUSIÓN | PROTOCOLO
+
+5. COMUNICACIÓN
+   Canal principal: GitHub.
+   Toda decisión externa debe reflejarse en un issue o commit.
+
+
+CAMBIOS.TXT — REGISTRO HISTÓRICO (APPEND-ONLY)
+----------------------------------------------
+El archivo CAMBIOS.TXT en la raíz es un historial cronológico.
+Cada PR debe agregar su entrada ARRIBA del todo (Append-Only).
+Máximo 50 líneas por entrada.
+
+  ══════════════════════════════════════════════════════════════
+  SESIÓN: {fecha} | PR: {número o título} | AUTOR: {alias}
+  QUÉ    : una línea.
+  POR QUÉ: una línea.
+  CÓMO   : máximo 10 líneas. Solo decisiones clave.
+  EFECTO : una línea. Qué cambia para el resto del equipo.
+  ══════════════════════════════════════════════════════════════
+
+Principio rector: menos es mejor. Código claro > comentarios extensos.
+
+
+FORMATO DE HEADER DE MÓDULO
+-----------------------------
+Todo archivo fuente nuevo lleva este header:
+
+  # ══════════════════════════════════════════════════════════════
+  # M{N}_{NOMBRE_MODULO} — {path/del/archivo.py}
+  # ══════════════════════════════════════════════════════════════
+  #
+  # [CAPA-0 | HUMANO]: {qué hace en lenguaje cotidiano}
+  #
+  # [CAPA-1 | TÉCNICO]:
+  #   Responsabilidad única: {una oración}
+  #   Dependencias externas: {lista o "ninguna"}
+  #   Dependencias internas: {módulos que usa}
+  #   Interfaz pública: {funciones/clases que exporta}
+  #
+  # [CAPA-2 | ARQUITECTO]:
+  #   Decisiones de diseño clave:
+  #   - {decisión}: {por qué sobre la alternativa}
+  #   Advertencias para futuros modificadores:
+  #   - {advertencia}
+  #
+  # Versión: v1.0.0
+  # Creado: {fecha} por {alias}
+  # [ALIAS]: v1.0.0: Creación inicial del módulo.
+  # ══════════════════════════════════════════════════════════════
+
+
+FORMATO DE SESIÓN / AGENT_LOG
+-------------------------------
+Cada sesión de trabajo de un agente genera un log.
+Guardar en: AGENT_LOG/YYYY-MM/{alias}_{fecha}.txt
+
+  ══════════════════════════════════════════════════════════════
+  SESIÓN: {fecha_hora}
+  AGENTE: {nombre_agente | "humano:{nombre}"}
+  ══════════════════════════════════════════════════════════════
+
+  TAREA: {descripción de una línea}
+  MÓDULO: M{N}_{NOMBRE}
+  DIFICULTAD: [TRIVIAL | SIMPLE | MODERADO | COMPLEJO | CRÍTICO]
+
+  PLAN:
+    1. {paso 1}
+    2. {paso 2}
+
+  RESULTADO: [PENDIENTE | COMPLETADO | ABORTADO | REQUIERE_REVISIÓN]
+  VERSIÓN_ANTES: v{X.Y.Z}
+  VERSIÓN_DESPUÉS: v{X.Y.Z+1}
+  NOTAS: {observaciones post-ejecución}
+  ──────────────────────────────────────────────────────────────
+
+
+VERSIONADO SEMÁNTICO
+---------------------
+Cada archivo versiona de forma independiente desde v1.0.0.
+  X — MAYOR : rompe compatibilidad o rediseño del módulo.
+  Y — MENOR : nueva funcionalidad sin romper lo existente.
+  Z — PARCHE : fix, refactor interno, docs. No cambia interfaz.
+
+NOTA: La actualización granular de estas versiones dentro de los
+archivos es responsabilidad primaria de los Agentes Autónomos.
+A los desarrolladores humanos se les recomienda delegar esta
+tarea iterativa a sus IAs de asistencia para reducir fricción.

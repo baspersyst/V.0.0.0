@@ -1,0 +1,12 @@
+══════════════════════════════════════════════════════════════
+[Historial cronológico. Las entradas nuevas van ARRIBA (Append-Only).]
+══════════════════════════════════════════════════════════════
+
+SESIÓN: 2026-06-05 | PR: INIT | AUTOR: Antigravity
+QUÉ    : Inicialización del repositorio base bajo Protocolo Aurum v0.4.
+POR QUÉ: Para establecer la doctrina operativa antes de comenzar el desarrollo.
+CÓMO   : 
+  - Generación de estructura de directorios y sistema de loggeo de agentes.
+  - Creación de archivos core: `AURUM_PROTOCOL.txt`, `IDENTIDAD.md`, y `arquitectura.md`.
+EFECTO : El equipo (humanos y agentes) ya cuenta con el terreno preparado para iterar y co-crear.
+══════════════════════════════════════════════════════════════
