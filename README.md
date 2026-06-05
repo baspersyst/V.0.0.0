@@ -1,6 +1,6 @@
 # PROYECTO AURUM (TBD: Nombre Real)
 
-Este repositorio es la matriz de trabajo que sigue estrictamente el **Protocolo Aurum v0.4** para la coproducción entre Humanos y Agentes Inteligentes.
+Este repositorio es la matriz de trabajo que sigue estrictamente el **Protocolo Aurum** para la coproducción entre Humanos y Agentes Inteligentes.
 
 ## 🧭 Puntos de Partida
 1. Si eres humano y es tu primer día, lee el Paso 1 de `AURUM_PROTOCOL.txt`. ¡Te tomará solo 5 minutos!

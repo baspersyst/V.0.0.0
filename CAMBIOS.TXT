@@ -2,6 +2,15 @@
 [Historial cronológico. Las entradas nuevas van ARRIBA (Append-Only).]
 ══════════════════════════════════════════════════════════════
 
+SESIÓN: 2026-06-05 | PR: MINOR_FIX | AUTOR: Xifer (delegado a Merlín)
+QUÉ    : Ajuste de alias y roles en CONTRIBUTORS y refinamiento del README.
+POR QUÉ: Para reflejar con precisión la identidad real del equipo.
+CÓMO   : 
+  - Se actualizaron los alias de 'Faraon' a 'Xifer' y de 'Antigravity' a 'Merlín'.
+  - Se eliminó la referencia explícita a la versión de Aurum en README.
+EFECTO : La base documental refleja las identidades correctas y está limpia para el onboarding.
+══════════════════════════════════════════════════════════════
+
 SESIÓN: 2026-06-05 | PR: INIT | AUTOR: Antigravity
 QUÉ    : Inicialización del repositorio base bajo Protocolo Aurum v0.4.
 POR QUÉ: Para establecer la doctrina operativa antes de comenzar el desarrollo.
