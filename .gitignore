@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.env
+venv/
+env/
+
+# Node
+node_modules/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Aurum Protocol
+# NOTA: Los archivos en AGENT_LOG/ SÍ deben ser trackeados por protocolo.

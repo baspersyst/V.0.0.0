@@ -26,5 +26,4 @@ Actualmente el sistema mantiene una estructura fundacional que se expandirá a d
 Los recursos son herramientas, prompts o configuraciones estáticas consumidas por el ecosistema (humanos o agentes).
 
 #### [SKILL] Organizador
-- **Ruta:** [recursos/skills/Organizador.md](file:///C:/Users/Faraon/3D%20Objects/proyecto_aurum/recursos/skills/Organizador.md)
 - **Función:** Escanear carpetas específicas en búsqueda del formato pedido por el usuario, validar su estructura y emitir un reporte o realizar acciones correctivas.

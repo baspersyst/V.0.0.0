@@ -2,6 +2,15 @@
 [Historial cronológico. Las entradas nuevas van ARRIBA (Append-Only).]
 ══════════════════════════════════════════════════════════════
 
+SESIÓN: 2026-06-07 | PR: CHORE | AUTOR: Merlín (Delegado por Xifer)
+QUÉ    : Establecimiento de .gitignore y limpieza de ruta en arquitectura.
+POR QUÉ: Para asentar buenas prácticas de repositorio (ignorando binarios/cache) y mantener la arquitectura agnóstica de rutas hardcodeadas.
+CÓMO   : 
+  - Se eliminó la ruta explícita de Organizador.md en `arquitectura.md`.
+  - Se creó el archivo `.gitignore` con exclusiones estándar.
+EFECTO : El repositorio ahora está protegido contra la subida accidental de archivos basura.
+══════════════════════════════════════════════════════════════
+
 SESIÓN: 2026-06-07 | PR: DOCS | AUTOR: Xifer
 QUÉ    : Reestructuración del README y Arquitectura para onboarding guiado.
 POR QUÉ: Para permitir que cualquier integrante nuevo (humano o agente) entienda el sistema en 5 minutos.
