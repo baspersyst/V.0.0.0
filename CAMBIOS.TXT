@@ -2,6 +2,15 @@
 [Historial cronológico. Las entradas nuevas van ARRIBA (Append-Only).]
 ══════════════════════════════════════════════════════════════
 
+SESIÓN: 2026-06-07 | PR: DOCS | AUTOR: Xifer
+QUÉ    : Reestructuración del README y Arquitectura para onboarding guiado.
+POR QUÉ: Para permitir que cualquier integrante nuevo (humano o agente) entienda el sistema en 5 minutos.
+CÓMO   : 
+  - Se implementó la 'Ruta de Onboarding' con hipervínculos directos en el `README.md`.
+  - Se definió el mapa minimalista en `arquitectura.md` detallando a `M0_CORE` y a la skill `Organizador`.
+EFECTO : El ecosistema es ahora auto-navegable, interconectado y documenta sus recursos fundacionales.
+══════════════════════════════════════════════════════════════
+
 SESIÓN: 2026-06-07 | PR: FEAT | AUTOR: Xifer
 QUÉ    : Creación del directorio de recursos y la skill Organizador.
 POR QUÉ: Para dotar al ecosistema de la capacidad de escanear y validar formatos de forma modular.
