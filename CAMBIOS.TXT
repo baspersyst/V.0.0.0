@@ -2,6 +2,15 @@
 [Historial cronológico. Las entradas nuevas van ARRIBA (Append-Only).]
 ══════════════════════════════════════════════════════════════
 
+SESIÓN: 2026-06-07 | PR: FEAT | AUTOR: Xifer
+QUÉ    : Creación del directorio de recursos y la skill Organizador.
+POR QUÉ: Para dotar al ecosistema de la capacidad de escanear y validar formatos de forma modular.
+CÓMO   : 
+  - Se creó la estructura `recursos/skills/`.
+  - Se redactó `Organizador.md` con las instrucciones base de escaneo de carpetas.
+EFECTO : El proyecto ahora soporta la definición y almacenamiento de skills documentadas.
+══════════════════════════════════════════════════════════════
+
 SESIÓN: 2026-06-07 | PR: CHORE | AUTOR: Merlín
 QUÉ    : Realineación de la rama principal a 'main' y push forzado a GitHub.
 POR QUÉ: GitHub inicializa repos con 'main' por defecto. Al pushear a 'master', el remoto parecía vacío.
