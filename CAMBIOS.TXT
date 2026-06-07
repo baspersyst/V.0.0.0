@@ -2,6 +2,15 @@
 [Historial cronológico. Las entradas nuevas van ARRIBA (Append-Only).]
 ══════════════════════════════════════════════════════════════
 
+SESIÓN: 2026-06-07 | PR: CHORE | AUTOR: Merlín
+QUÉ    : Realineación de la rama principal a 'main' y push forzado a GitHub.
+POR QUÉ: GitHub inicializa repos con 'main' por defecto. Al pushear a 'master', el remoto parecía vacío.
+CÓMO   : 
+  - `git branch -M main` localmente.
+  - `git push -f -u origin main` para sobreescribir el remoto.
+EFECTO : El repositorio remoto refleja el estado local perfectamente.
+══════════════════════════════════════════════════════════════
+
 SESIÓN: 2026-06-05 | PR: MINOR_FIX | AUTOR: Xifer (delegado a Merlín)
 QUÉ    : Ajuste de alias y roles en CONTRIBUTORS y refinamiento del README.
 POR QUÉ: Para reflejar con precisión la identidad real del equipo.

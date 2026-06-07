@@ -1,0 +1,21 @@
+══════════════════════════════════════════════════════════════
+SESIÓN: 2026-06-07T13:52:00
+AGENTE: Merlín
+══════════════════════════════════════════════════════════════
+
+TAREA: Corrección de desincronización de rama (master -> main) y registro de log faltante.
+MÓDULO: M0_CORE (Infraestructura)
+DIFICULTAD: TRIVIAL
+
+PLAN:
+  1. Identificar por qué el repositorio remoto se mostraba vacío (problema de branch default).
+  2. Renombrar la rama local de 'master' a 'main'.
+  3. Ejecutar push forzado al remoto para asentar la base documental local como fuente de verdad.
+  4. Crear este AGENT_LOG para cumplir estrictamente la doctrina de trazabilidad Aurum.
+  5. Actualizar CAMBIOS.TXT reflejando la intervención infraestructural.
+
+RESULTADO: COMPLETADO
+VERSIÓN_ANTES: v0.4 (Protocolo)
+VERSIÓN_DESPUÉS: v0.4 (Protocolo)
+NOTAS: El Arquitecto Principal (Xifer) notó correctamente la omisión de la documentación del agente tras las intervenciones directas en la terminal. El protocolo Aurum exige rigor absoluto, sin importar el tamaño del cambio.
+──────────────────────────────────────────────────────────────
